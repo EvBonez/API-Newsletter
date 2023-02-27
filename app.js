@@ -5,7 +5,7 @@ const path = require('path');
 
 const app = express();
 
-const key = "f5cea9b3964d50a0ff40d5d321018a49-us18"
+const key = process.env.bonezMail
 const audienceId = "23d5a29e4f"
 
 app.use(bodyParser.urlencoded({extended : true}));
